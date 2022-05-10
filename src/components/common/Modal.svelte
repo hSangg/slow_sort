@@ -46,11 +46,7 @@
 
 <div class="p-2 flex items-center w-full overflow-hidden">
   <form bind:this={form} on:submit={handelSubmit} action="" class="w-full p-2">
-    <input
-      type="text"
-      class="w-full  p-2 "
-      placeholder="Nhap vao phan tu mang"
-    />
+    <input type="text" class="w-full  p-2 " placeholder="vd: 1,5,6,23,67" />
     <button
       on:submit={handelSubmit}
       type="submit"
