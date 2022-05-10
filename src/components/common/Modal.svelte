@@ -44,7 +44,7 @@
   };
 </script>
 
-<div class="p-2 flex items-center w-full">
+<div class="p-2 flex items-center w-full overflow-hidden">
   <form bind:this={form} on:submit={handelSubmit} action="" class="w-full p-2">
     <input
       type="text"
@@ -54,13 +54,15 @@
     <button
       on:submit={handelSubmit}
       type="submit"
-      class="w-full bg-green-500 p-2">{button}</button
+      class="w-full d p-2 transition ease-in-out delay-100 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+      >{button}</button
     >
     {#if first}
       <button
         on:click={handleClick}
         type="submit"
-        class="w-full bg-green-700 p-2">Thu Lai</button
+        class="w-full p-2 transition ease-in-out delay-100 bg-blue-800 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+        >Thu Lai</button
       >
     {/if}
   </form>

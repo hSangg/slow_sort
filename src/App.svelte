@@ -17,5 +17,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    zoom: 4;
   }
 </style>
